@@ -1,0 +1,40 @@
+@use '../../styling/colours' as c;
+
+.ui-accordion {
+  width: 100%;
+
+  & details {
+    border-top: 1px c.$black solid;
+    padding: 25px;
+
+    &:last-of-type {
+      border-bottom: 1px c.$black solid;
+    }
+
+    &[open] summary {
+      margin-bottom: 48px;
+
+      &::after {
+        content: '-';
+      }
+    }
+  }
+
+  & summary {
+    cursor: pointer;
+    position: relative;
+
+    &::marker {
+      content: '';
+    }
+
+    &::after {
+      color: c.$black;
+      content: '+';
+      position: absolute;
+      right: 0;
+      translate: 0 -50%;
+      top: 50%;
+    }
+  }
+}

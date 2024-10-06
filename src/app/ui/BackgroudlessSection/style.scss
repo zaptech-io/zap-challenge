@@ -1,0 +1,13 @@
+.backgroundless-section {
+  padding: 16px;
+
+  >div {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+
+    >* {
+      border-radius: 28px;
+    }
+  }
+}

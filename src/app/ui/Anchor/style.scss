@@ -1,0 +1,16 @@
+.ui-anchor {
+  --_delay: 0.3s;
+  --_short-delay: 0.2s;
+
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: background-color var(--_short-delay) ease var(--_short-delay), color var(--_delay) ease var(--_short-delay), text-underline-offset var(--_delay) ease var(--_delay);
+
+  &:hover {
+    background-color: black;
+    color: white;
+    text-underline-offset: -17px;
+    transition: background-color var(--_short-delay) ease var(--_delay), color var(--_delay) ease var(--_delay), text-underline-offset var(--_delay) ease;
+  }
+}

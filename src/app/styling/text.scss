@@ -1,0 +1,51 @@
+@use './variables' as v;
+@use './colours' as c;
+
+.ui-text {
+  color: c.$gray;
+  font-family: v.$font-family;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 180%;
+}
+
+.ui-small-black-text {
+  color: c.$black;
+  font-family: v.$font-family;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 180%;
+  text-wrap: balance;
+}
+
+.ui-small-text {
+  color: c.$gray;
+  font-family: v.$font-family;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 180%;
+  text-wrap: balance;
+}
+
+.ui-black-text {
+  color: c.$black;
+  font-family: v.$font-family;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ui-section-title {
+  color: c.$black;
+  font-family: v.$font-family;
+  font-size: 48px;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.ui-subtitle {
+  color: c.$black;
+  font-family: v.$font-family;
+  font-size: 26px;
+  font-weight: 600;
+  text-wrap: balance;
+}

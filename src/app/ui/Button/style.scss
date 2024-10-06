@@ -1,0 +1,53 @@
+@use '../../styling/colours' as c;
+
+.ui-button {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  height: fit-content;
+  padding: 17px 28px;
+  transition: all 0.35s ease;
+  width: fit-content;
+
+  &:hover:not(:disabled) {
+    transition: all 0.35s ease;
+
+    & svg {
+      filter: invert(1);
+    }
+  }
+
+  &[aria-label='dark'] {
+    border: 1px c.$black solid;
+
+    &:hover:not(:disabled) {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &[aria-label='bright'] {
+    background-color: white;
+    border: 1px white solid;
+    color: black;
+
+    &:hover:not(:disabled) {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &:disabled {
+    border-color: c.$gray;
+    color: c.$gray;
+    cursor: default;
+
+    & svg {
+      filter: invert(0.5)
+    }
+  }
+}
